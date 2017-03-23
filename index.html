@@ -47,6 +47,18 @@
     // Find the comment with this ID
     // delete the comment with the ID of 823423
 
+    const commentToRemove = comments.findIndex( comment => { return comment.id === 823423 } );
+    comments.splice(commentToRemove, 1);
+    console.table(comments);
+
+    /////// other possible way to remove comment from Wes Bos /////
+    
+    // const newComments = [
+    //   ...comments.slice(0, commentToRemove),
+    //   ...comments.slice(commentToRemove + 1)
+    // ];
+
+
   </script>
 </body>
 </html>
